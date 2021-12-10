@@ -14,7 +14,7 @@ Activate your virtual environment using the below command:
 - source <path_to_virtual_env_folder>/bin/activate
 
 3) Install all the requirements for the project using the below command:
-- pip install -r <path_to_requirements.txt_file_in_the_base_directory>
+- pip install -r <path_to_requirements.txt_file>
 
 4) Create a new database using MYSQL.
 
