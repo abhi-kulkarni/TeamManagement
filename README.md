@@ -45,3 +45,5 @@ Activate your virtual environment using the below command:
 
 8) The project will be up and running on your localhost 
 - http://127.0.0.1:8000
+
+- <b>This project took me around 4-5 hrs to complete.</b>
