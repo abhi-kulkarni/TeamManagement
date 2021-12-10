@@ -47,3 +47,18 @@ Activate your virtual environment using the below command:
 - http://127.0.0.1:8000
 
 - <b>This project took me around 4-5 hrs to complete.</b>
+
+
+<b>Screenshots</b>
+
+![Screenshot 1](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img1.png?raw=true)
+
+![Screenshot 2](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img2.png?raw=true)
+
+![Screenshot 3](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img3.png?raw=true)
+
+![Screenshot 4](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img4.png?raw=true)
+
+![Screenshot 5](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img5.png?raw=true)
+
+![Screenshot 6](https://github.com/abhi-kulkarni/TeamManagement/blob/main/screenshots/img6.png?raw=true)
