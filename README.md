@@ -18,7 +18,7 @@ Activate your virtual environment using the below command:
 
 4) Create a new database using MYSQL.
 
-5) Go inside the team_management_app folder and create a .env file in the same directory as "manage.py" and replace the below with your data. 
+5) Go inside the team_management_app folder and create a <b>.env </b> file in the same directory as "manage.py" and replace the below with your data. 
 
     SECRET_KEY=<YOUR_SECRET_KEY> <br />
     DEBUG=True <br />
@@ -36,7 +36,7 @@ Activate your virtual environment using the below command:
 - import os
 - os.urandom(32) and copy the random key.
 
-6) Go inside the directory containing manage.py and run the following command :
+6) Go inside the directory containing <b>manage.py</b> and run the following command :
 - python manage.py makemigrations
 - python manage.py migrate
 
