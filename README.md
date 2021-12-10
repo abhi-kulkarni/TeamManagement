@@ -34,7 +34,7 @@ Activate your virtual environment using the below command:
 
 - SECRET_KEY can be created using python in your terminal
 - import os
-- os.urandom(32)
+- os.urandom(32) and copy the random key.
 
 6) Go inside the directory containing manage.py and run the following command :
 - python manage.py makemigrations
