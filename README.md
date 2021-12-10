@@ -2,7 +2,7 @@
 
 Steps for running the project on local system (Linux):
 
-1) Clone the repository using the command :
+1) Clone the repository using the command in your terminal :
 - git clone https://github.com/abhi-kulkarni/TeamManagement.git
 
 2) Create a virtual environment for python3 using the command:
