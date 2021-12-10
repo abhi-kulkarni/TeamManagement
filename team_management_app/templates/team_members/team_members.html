@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block main_title %}
+<h1>List page</h1>
+{% endblock %}
+
+{% block content %}
+<div class="teamMemberTitleContainer row">
+    <div class="p-0 col-12">
+        <a class="float-right addMemberBtn" href="{% url 'add_team_member' %}">
+            <span class="material-icons addMemberIcon">add</span>
+        </a>
+    </div>
+    <div class="pt-0 col-12">
+        <h2>Team members</h1>
+        <p class="teamMemberSubtitle">You have {{ object_list|length  }} team members</p>
+    </div>
+    
+    <div class="p-0 col-12">
+        <hr class="m-3"/>
+        {% for team_member in object_list %}
+            <a class="teamMemberRow" href="{% url 'edit_team_member' team_member.id %}">
+                <div class="m-0 p-2 teamMember row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-3">
+                        <img class="profilePicture" src="{% static 'team_members/images/default_profile_picture.png' %}" alt="Default Profile Picture">
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-8 col-9">
+                        <p class="m-0 pb-1">{{ team_member.first_name }} {{ team_member.last_name }} {% if team_member.is_admin %} (admin) {% endif %}</p>
+                        <p class="m-0 pb-1 teamMemberSubtitle">{{ team_member.phone }}</p>
+                        <p class="m-0 pb-1 teamMemberSubtitle">{{ team_member.email }}</p>
+                    </div>
+                </div>
+            </a>
+            <hr class="m-3"/>
+        {% empty %}
+            <div class="m-2 row">
+                <div class="col-12">No team members added yet.</div>
+            </div>
+        {% endfor %}
+        
+    </div>
+    
+</div>
+{% endblock %}

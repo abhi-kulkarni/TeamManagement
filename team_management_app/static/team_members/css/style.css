@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+.pageTitleContainer{
+    margin: 15px;
+}
+
+.pageTitle{
+    text-align: center;
+    padding: 10px;
+    background-color: #F7F7F9;
+}
+
+.pageContentContainer{
+    margin: 15px;
+}
+
+.pageContent{
+    padding: 20px;
+    background-color: #F7F7F9;
+}
+
+.teamMemberTitleContainer{
+    background-color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.teamMemberRow{
+    text-decoration: none !important;
+    color: black;
+}
+
+.teamMemberRow:hover .teamMember{
+    text-decoration: none !important;
+    color: black;
+    background-color: #F5F5F5;
+}
+
+.teamMemberSubtitle{
+    color: gray;
+}
+
+.teamMemberLabel{
+    font-size: 22px !important;
+    font-weight: bold;
+    margin: 0px 0px 15px 0px !important;
+}
+
+.addMemberBtn{
+    border: none !important;
+    background-color:white;
+    padding: 5px 10px 0px 0px;
+}
+
+.addMemberIcon{
+    font-size: 40px !important;
+    color: #43A3B8;
+    cursor: pointer;
+}
+
+.roleRadioLabel{
+    margin: 0px;
+    font-size: 18px;
+    color: gray;
+}
+
+.radio > input {
+    cursor: pointer;
+    margin-right: 20px;
+    float: right!important;
+}
+
+input[type=radio]:checked + label {
+    font-weight: bold;
+    color: black;
+}
+
+.deleteTeamMemberBtn{
+    background-color: white;
+    color: red;
+    border-color: lightgray;
+}
+
+.deleteTeamMemberBtn:hover{
+    background-color: white;
+    color: red;
+    border-color: lightgray;
+}
+
+.profilePicture{
+    border-radius: 50% !important;
+    height: 60px;
+    width: 60px;
+}

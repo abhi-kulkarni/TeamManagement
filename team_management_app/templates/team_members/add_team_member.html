@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block main_title %}
+<h1>Add page</h1>
+{% endblock %}
+
+{% block content %}
+<div class="teamMemberTitleContainer row">
+    <div class="p-0 col-12">
+        <h2>Add a team member</h1>
+        <p class="teamMemberSubtitle">Set email, location and role.</p>
+    </div>
+    <div class="p-0 col-12">
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form.visible_fields %}
+                {% if forloop.counter == 1  %}
+                    <div class="teamMemberLabel">Info</div>
+                {% endif %}
+                {% if field.name != "is_admin" %}
+                    <div class="form-group">
+                        {{ field|as_crispy_field  }}
+                    </div>
+                {% else %}
+                <div class="form-group">
+                    <div class="teamMemberLabel">Role</div>
+                    {% for radio_field in field %}
+                        {% if forloop.counter == 1  %}
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="radio">
+                                        {{ radio_field.tag }}
+                                        <label class="roleRadioLabel">Regular - Can't delete members</label>
+                                    </span>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="radio">
+                                        {{ radio_field.tag }}
+                                        <label class="roleRadioLabel">Admin - Can delete members</label>
+                                    </span>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <hr class="mt-2"/>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {{ field.errors }}
+            {% endfor %}
+            <button type="submit" class="float-right btn btn-primary">Save</button>
+        </form>
+    </div>
+    <!-- <div class="p-0 col-1">
+        <button class="float-right addMemberBtn" data-toggle="tooltip" data-placement="top" title="Add Team Member">
+            <span class="material-icons addMemberIcon">add</span>
+        </button>
+    </div> -->
+</div>
+{% endblock %}
