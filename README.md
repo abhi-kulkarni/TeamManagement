@@ -32,7 +32,7 @@ Activate your virtual environment using the below command:
     BASE_URL=http://127.0.0.1:8000 <br />
     ENV=dev <br />
 
-- SECRET_KEY can be created using python in your terminal
+- SECRET_KEY can be created by using python in your terminal
 - import os
 - os.urandom(32) and copy the random key.
 
